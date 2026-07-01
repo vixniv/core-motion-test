@@ -18,6 +18,7 @@ class ESPController: ObservableObject {
     @Published var networkInfo: String = "Checking..."
 
     private var pathMonitor: NWPathMonitor?
+    private let queue = DispatchQueue(label: "com.yoram.core-motion-test.networkQueue")
 
     private init() {
         startNetworkMonitor()
@@ -60,7 +61,7 @@ class ESPController: ObservableObject {
             print("[NET] Path update: \(info)")
             DispatchQueue.main.async { self?.networkInfo = info }
         }
-        pathMonitor?.start(queue: .global(qos: .utility))
+        pathMonitor?.start(queue: queue)
     }
 
     private func send(command: String) {
@@ -122,7 +123,7 @@ class ESPController: ObservableObject {
                 break
             }
         }
-        conn.start(queue: .global(qos: .userInitiated))
+        conn.start(queue: queue)
     }
 
     func nextSong()                    { send(command: "NEXT") }

@@ -319,8 +319,9 @@
 				DEVELOPMENT_TEAM = P8ZK8X25NF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "core-motion-test-Watch-App-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "core-motion-test";
-				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "This app needs local network access to send commands to the ESP32 speaker controller via UDP.";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "This app communicates with an ESP32 over Wi-Fi.";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKWatchOnly = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -353,8 +354,9 @@
 				DEVELOPMENT_TEAM = P8ZK8X25NF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "core-motion-test-Watch-App-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "core-motion-test";
-				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "This app needs local network access to send commands to the ESP32 speaker controller via UDP.";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "This app communicates with an ESP32 over Wi-Fi.";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKWatchOnly = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
